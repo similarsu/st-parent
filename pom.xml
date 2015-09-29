@@ -31,6 +31,10 @@
 		<google.protobuf.version>2.5.0</google.protobuf.version>
 		<jackson.version>2.4.3</jackson.version>
 		<rabbitmq.version>3.5.1</rabbitmq.version>
+		<winzipaes.version>1.0.1</winzipaes.version>
+		<jaxb.version>2.2.11</jaxb.version>
+		<jdom.version>2.0.2</jdom.version>
+		<bouncycastle.verison>1.46</bouncycastle.verison>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -73,12 +77,12 @@
 				<artifactId>spring-aspects</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
-			
+
 			<dependency>
-			<groupId>org.springframework.amqp</groupId>
-			<artifactId>spring-rabbit</artifactId>
-			<version>${spring.amqp.verison}</version>
-		</dependency>
+				<groupId>org.springframework.amqp</groupId>
+				<artifactId>spring-rabbit</artifactId>
+				<version>${spring.amqp.verison}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>javax.servlet</groupId>
@@ -228,6 +232,36 @@
 				<groupId>com.rabbitmq</groupId>
 				<artifactId>amqp-client</artifactId>
 				<version>${rabbitmq.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.idyl</groupId>
+				<artifactId>winzipaes</artifactId>
+				<version>${winzipaes.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>${jaxb.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom</artifactId>
+				<version>${jdom.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk16</artifactId>
+				<version>${bouncycastle.verison}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-ext-jdk16</artifactId>
+				<version>${bouncycastle.verison}</version>
 			</dependency>
 
 		</dependencies>
