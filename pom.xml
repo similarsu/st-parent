@@ -145,11 +145,17 @@
 				<artifactId>cglib</artifactId>
 				<version>${cglib.version}</version>
 			</dependency>
-
+			<!-- 提供了对于JavaBean进行各种操作，克隆对象,属性等等 -->
 			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
 				<version>${commons.beanutils.version}</version>
+			</dependency>
+			<!-- XML与Java对象之间相互转换. -->
+			<dependency>
+				<groupId>commons-betwixt</groupId>
+				<artifactId>commons-betwixt</artifactId>
+				<version>0.8</version>
 			</dependency>
 
 			<dependency>
@@ -274,7 +280,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.4</version>
+					<version>3.3</version>
 					<configuration>
 						<source>${jdk.version}</source>
 						<target>${jdk.version}</target>
